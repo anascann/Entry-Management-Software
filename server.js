@@ -57,8 +57,8 @@ app.post('/Check-In',function(req,res){
     var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'lieuanas456',
-        pass: 'Anaskhan@123'
+        user: 'youremail',
+        pass: 'password'
       }
     });
     
