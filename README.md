@@ -4,3 +4,11 @@ This software is based on full stack which takes an entry of the visitor and his
 And, when the visitor wants to check-out, user must enter his phone number which is unique in order to check out, the time stamp of event will be sent to database, and further the host and visitor both will recieve the details of this meeting on their email and phone.
 
 
+Installation:
+
+install node.js into your cloned directory and change the path as per required, 
+also install the mysql database and create table which is in, mydb.txt file
+
+run the project on command line, NODE Server.js and run on the localhost:3000
+
+
