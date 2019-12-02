@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"></link>
+ 
+ <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+    </script>
+   
+
+</head>
+<body onload="startTime()" onclick="">
+<h1>HELLO VISITOR</h1>
+    
+    <div id="date" ></div>
+       <div id="txt"></div>
+        <div class="cin">
+         <h2>  <i class="fas fa-address-book"></i> Please enter your details below</h2>
+        <form action="Check-In" method="post">
+            <b> Name:</b> <br>
+            <input type="text" name="Name" placeholder="enter your name">
+            <br>
+            <br>
+            <b>E-Mail:</b> <br>
+            <input type="email" name="email" placeholder="enter email">s
+            <br>
+            <br>
+            <b>Phone-Number:</b> <br>
+            <input type="number" name="phone" placeholder="enter no.">
+            <br>
+            <br>
+            <div class="form">
+              <b> Enter Host's Name:</b>  <br>
+            <input type="text" name="Hosts_name" placeholder="Host's name">
+            <br><br>
+            
+            <b>Hosts's Email Id:</b> <br>             <input type="email" name="Hosts_email" placeholder="Hosts's email">
+            <br><br>
+            
+            <b>Host's Number:</b> <br>
+            <input type="text" name="Hosts_phone" placeholder="Host's no.">
+            <br><br>
+            
+            </div>
+           
+            <button id="button" type="submit"  onclick="changeText(this)">
+                <b>Check-In</b>
+            </button>
+            <script src="js/time.js"></script>
+            
+        </form>
+</div>
+  <div class="cout">
+      <form action="/Check-out" method="post">
+          <b> Phone no.</b> <br>
+          <input type="number" name="phone no." placeholder="enter phone no.">
+          <br>
+          <br>
+          <button type="submit" value="/Check-out"><b>Check-out</b></button>
+      </form>
+  </div>  
+   
+    </div>
+<!--    <script src="/server.js"></script>-->
+    <script src="js/home.js"></script>
+</body>
+</html>
