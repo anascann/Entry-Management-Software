@@ -22,18 +22,22 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
-    </script>
+function dontGo(event) {
+    event.preventDefault();
+}
+document.getElementById("in").addEventListener("click",dontgo)
+</script>
    
 
 </head>
-<body onload="startTime()" onclick="">
+<body onload="startTime()">
 <h1>HELLO VISITOR</h1>
     
-    <div id="date" ></div>
+ <div id="date" ></div>
        <div id="txt"></div>
         <div class="cin">
          <h2>  <i class="fas fa-address-book"></i> Please enter your details below</h2>
-        <form action="Check-In" method="post">
+        <form action="Check-In" method="post" id="in">
             <b> Name:</b> <br>
             <input type="text" name="Name" placeholder="enter your name">
             <br>
@@ -70,10 +74,10 @@ function checkTime(i) {
   <div class="cout">
       <form action="/Check-out" method="post">
           <b> Phone no.</b> <br>
-          <input type="number" name="phone no." placeholder="enter phone no.">
+          <input type="number" name="phoneno" placeholder="enter phone no.">
           <br>
           <br>
-          <button type="submit" value="/Check-out"><b>Check-out</b></button>
+          <button type="submit"><b>Check-out</b></button>
       </form>
   </div>  
    

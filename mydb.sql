@@ -1,3 +1,1 @@
-create table visitor( name varchar(100), email varchar(320), phone varchar(20), primary key(phone));
-
-create table host( hostsname varchar(100), hostsemail varchar(320), phone varchar(20), primary key(phone));
+create table meeting ( visitor_name varchar(100), host_name varchar(100), visitor_email varchar(100), host_email varchar(100), visitor_phone int(10), host_phone int(10), checkin datetime, checkout datetime)
