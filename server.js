@@ -39,8 +39,8 @@ app.post('/Check-In',function(req,res){
 var transporter1 = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'lieuanas456@gmail.com',
-    pass: 'anascan123@'
+    user: 'youremail',
+    pass: 'your password'
   }
 });
 
@@ -96,8 +96,8 @@ app.post('/Check-out',function(req,res){
   var transporter2 = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'lieuanas456@gmail.com',
-      pass: 'anascan123@'
+      user: 'your email',
+      pass: 'your password'
     }
   });
 
